@@ -1,9 +1,37 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Volume 1"
+    url: /vol1_landing/
+    description: "GPIO and Asynchronous Programming with Microdot"
+  - title: "Volume 2"
+    url: /vol2_landing/
+    description: "Pulse Width Modulation and DC Motors"
+  - title: "Volume 3"
+    url: /vol3_landing/
+    description: "Communicating with the UART, I2C, and SPI Interfaces"    
+  - title: "Contact"
+    url: /contact/
+  - title: "Terms of Service & Privacy Policy"
+    url: /privacy/
+footer:
+  - title: "Contact"
+    url: /contact/
+  - title: "Terms of Service & Privacy Policy"
+    url: /privacy/
+#  - title: "Quick-Start Guide"
+#    url: /docs/quick-start-guide/  
+#  - title: "Posts"
+#    url: /year-archive/
+#  - title: "Categories"
+#    url: /categories/
+#  - title: "Tags"
+#    url: /tags/
+#  - title: "Pages"
+#    url: /page-archive/
+#  - title: "Collections"
+#    url: /collection-archive/
+#  - title: "External Link"
+#    url: https://google.com
+#    target: _blank
+    
