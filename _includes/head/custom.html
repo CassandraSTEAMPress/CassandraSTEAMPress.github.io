@@ -1,12 +1,12 @@
 <style>
-  /* Force both states immediately to strip any underlying theme variables */
-  .greedy-nav .site-title a,
-  .greedy-nav .site-title a:visited,
-  .greedy-nav .site-title a:link {
-    color: #0000ff !important;
+  /* Match the deep theme selector to ensure a true override */
+  div.greedy-nav a.site-title,
+  .masthead__inner-wrap .greedy-nav .site-title a {
+    color: #0000ff !important; /* Force to blue */
   }
 
-  .greedy-nav .site-title a:hover {
-    color: #00ff00 !important;
+  div.greedy-nav a.site-title:hover,
+  .masthead__inner-wrap .greedy-nav .site-title a:hover {
+    color: #00ff00 !important; /* Force to green */
   }
 </style>
