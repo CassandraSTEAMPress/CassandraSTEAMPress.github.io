@@ -4,18 +4,17 @@ search: false
 ---
 
 @charset "utf-8";
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; /* skin */
+@import "minimal-mistakes"; /* main partials */
 
 /* ==========================================================================
    Hero Overlays (Header Images)
    ========================================================================== */
 .page__hero--overlay .wrapper {
   text-align: left;
-// margin-top: 0.5in;
-// margin-right: 0.5in;
-// margin-bottom: 0.5in;
+  /* margin-top: 0.5in; */
+  /* margin-right: 0.5in; */
+  /* margin-bottom: 0.5in; */
   margin-left: 0; /* Optional: aligns content to the far left of the container */
 }
 
@@ -27,5 +26,17 @@ search: false
 }
 
 .greedy-nav .site-title a:hover {
-  color: #4A4FB4 !important; /* Changes only the site title on hover to purple=800080  */
+  color: #4A4FB4 !important; /* Changes only the site title on hover to purple=800080 */
+}
+
+/* Hard override injection */
+.masthead__inner-wrap .greedy-nav .site-title a,
+.greedy-nav .site-title a {
+  color: #0000ff !important;
+  border: 3px solid red !important;
+}
+
+.masthead__inner-wrap .greedy-nav .site-title a:hover,
+.greedy-nav .site-title a:hover {
+  color: #00ff00 !important;
 }
