@@ -1,12 +1,23 @@
 <style>
-  /* Match the deep theme selector to ensure a true override */
-  div.greedy-nav a.site-title,
-  .masthead__inner-wrap .greedy-nav .site-title a {
-    color: #0000ff !important; /* Force to blue */
+  /* Strip out all text properties and force pure blue colors */
+  .masthead__inner-wrap .greedy-nav .site-title a,
+  .greedy-nav .site-title a {
+    color: #0000ff !important;
+    -webkit-text-fill-color: #0000ff !important; /* Forces color on webkit/safari engines */
+    opacity: 1 !important;                       /* Prevents the text from being partially transparent */
+    filter: none !important;                    /* Removes any underlying color-shifting filters */
+    
+    /* SANITY TEST: Adds a bright red box around the title link */
+    border: 3px solid red !important; 
   }
 
-  div.greedy-nav a.site-title:hover,
-  .masthead__inner-wrap .greedy-nav .site-title a:hover {
-    color: #00ff00 !important; /* Force to green */
+  /* Force pure green on hover */
+  .masthead__inner-wrap .greedy-nav .site-title a:hover,
+  .greedy-nav .site-title a:hover {
+    color: #00ff00 !important;
+    -webkit-text-fill-color: #00ff00 !important;
+    opacity: 1 !important;
+    filter: none !important;
   }
 </style>
+
