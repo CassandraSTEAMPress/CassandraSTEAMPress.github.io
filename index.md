@@ -17,7 +17,7 @@ header:
   caption: "Cassandra STEAM Press"
   actions:
     - label: "Buy on Amazon.com"  
-      url: "https://kdp.amazon.com/en_US/series/2XYYZRA37WR"
+      url: "https://www.amazon.com/dp/B0H4WZBC4Q" # "https://kdp.amazon.com/en_US/series/2XYYZRA37WR"
 #    - label: "Buy on IngramSpark.com"
 #      url: "https://www.IngramSpark.com"  
 excerpt: "Getting Started with Entity Event-Driven Embedded Systems"
